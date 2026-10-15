@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A little surprise ♡</title>
+
+    <style>
+        body {
+            background-color: #e5f3ff;
+            font-family: monospace;
+            color: #4b6480;
+            text-align: center;
+            padding: 50px 15px;
+        }
+
+        .card {
+            background-color: white;
+            max-width: 350px;
+            margin: auto;
+            padding: 30px 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px #c5dff5;
+        }
+
+        .heart {
+            color: #f29ac2;
+            font-size: 60px;
+        }
+
+        button {
+            background-color: #f29ac2;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-family: monospace;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e47eac;
+        }
+
+        #secret {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .little-heart {
+            color: #f29ac2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="heart">♡</div>
+
+        <h1>Hey, you!</h1>
+
+        <p>I made a little something for you.</p>
+
+        <button onclick="showMessage()">
+            Open your gift ♡
+        </button>
+
+        <div id="secret">
+            <h2>Your little newbie programmer loves you <span class="little-heart">♡</span></h2>
+
+            <p>Made with love and a little (lots) of ChatGPT ♡</p>
+
+            <p class="little-heart">♡ ♡ ♡</p>
+        </div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("secret").style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
